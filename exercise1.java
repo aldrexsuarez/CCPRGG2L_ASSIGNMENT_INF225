@@ -1,4 +1,3 @@
-[11:45 am] Romanillos, Shaira Twinkle
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.Scanner;
