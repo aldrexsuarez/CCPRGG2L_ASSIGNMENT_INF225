@@ -6,20 +6,20 @@ public class App {
 
 
         item1.name = "Tissue";
-        item1.Price=100.00;
+        item1.Price=80.00;
         item1.showItemName();
         item1.showItemPrice();
 
 
         GroceryItem item2 = new Toothbrush();
         item2.name="Colgate ";
-        item2.Price=250.00;
+        item2.Price=247.00;
         item2.showItemName();
         item2.showItemPrice();
 
         GroceryItem item3= new Toothpaste();
         item3.name="Pepsodent ";
-        item3.Price=1000.00;
+        item3.Price=600.00;
         item3.showItemName();
         item3.showItemPrice();
 
