@@ -1,49 +1,61 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+
+    public static void main (String [] args) throws Exception{
+
+        GroceryItem item1 = new GroceryItem();
 
 
-            GroceryItem item1 = new GroceryItem();
+        item1.name = "Tissue";
+        item1.Price=100.00;
+        item1.showItemName();
+        item1.showItemPrice();
 
-            item1.name = "Tissue";
 
-            item1.showItemName();
+        GroceryItem item2 = new Toothbrush();
+        item2.name="Colgate ";
+        item2.Price=250.00;
+        item2.showItemName();
+        item2.showItemPrice();
+
+        GroceryItem item3= new Toothpaste();
+        item3.name="Pepsodent ";
+        item3.Price=1000.00;
+        item3.showItemName();
+        item3.showItemPrice();
+
+        Cashier c1= new Cashier();
+        c1.showPrice(item1);
+        c1.showPrice(item2);
+        c1.showPrice(item3);
+        double total=item1.Price+item2.Price+item3.Price;
+        System.out.println(total);
+        c1.checkout(item1);
+        c1.checkout(item2);
+        c1.checkout(item3);
 
 
-            // item in a form of a toothbrush
-            GroceryItem item2 = new Toothbrush();
-            item2.name = "Colgate";
-            item2.showItemName();
-
-            // item in a form of a toothpaste
-            GroceryItem item3 = new Toothpaste();
-            item3.name = "Pepsodent";
-            item3.showItemName();
-
-            // Cashier object
-            Cashier c1 = new Cashier();
+        GroceryItem[] itemarray= new GroceryItem[2];
+        itemarray[0]=item2;
+        itemarray[1]=item3;
             
-            // Polymorphic parameter
-            c1.checkOut(item2);
-            c1.checkOut(item3);
-
-            // Polymorphic array
-            GroceryItem[] itemArray = new GroceryItem[2];
-            itemArray[0] = item2;
-            itemArray[1] = item3;
-
-            // Loop through all items
-            for (int i = 0; i < itemArray.length; i++) {
-                itemArray[i].showItemName();
-
-
-            // Pet mypet = new Pet();
-            Dog myDog = new Dog();
-            myDog.eat();
+        // Loop through all items
             
-            Lion myLion = new Lion();
-            myLion.walk();
-            myLion.run();
-            }
+        for (int i = 0; i < itemArray.length; i++) {
+                
+            itemArray[i].showItemName();
+        }
+
+
+            
+         // Pet mypet = new Pet();
+         Dog myDog = new Dog();
+         myDog.eat();
+            
+         Lion myLion = new Lion();
+         myLion.walk();
+         myLion.run();
+            
+        }
     }
     
 }
