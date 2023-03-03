@@ -10,9 +10,9 @@ import java.awt.*;
 public class ColorMenu extends JFrame{
 
     // Color name array
-    private String[] colorNameArray = {"GRAY", "LIGHT GRAY", "WHITE", "BLACK"};
+    private String[] colorNameArray = {"GRAY", "BLUE", "WHITE", "BLACK"};
     // Color list array
-    private Color[] colorListArray = {Color.GRAY, Color.LIGHT_GRAY, Color.WHITE, Color.BLACK};
+    private Color[] colorListArray = {Color.GRAY, Color.BLUE, Color.WHITE, Color.BLACK};
     // JList
     JList colorList;
 
