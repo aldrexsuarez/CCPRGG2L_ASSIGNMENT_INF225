@@ -12,7 +12,7 @@ public class MainMenu extends JFrame{
         // JLabel
         JLabel imageLabel = new JLabel();
         // Cat image downloaded from internet
-        ImageIcon catImage = new ImageIcon("cat.gif");
+        ImageIcon catImage = new ImageIcon("tenor.gif");
         // Set image to label
         imageLabel.setIcon(catImage);
 
